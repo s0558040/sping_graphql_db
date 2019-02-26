@@ -1,0 +1,21 @@
+schema {
+    query: Query
+}
+
+type Query {
+    author(id: Int!): Author
+    book(isbn: Int!): Book
+}
+
+type Author {
+    author_id: Int!
+    forename: String
+    lastname: String
+}
+
+type Book {
+    isbn: Int!
+    title: String
+    pages: Int
+    author: Author!
+}

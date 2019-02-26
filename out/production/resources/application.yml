@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: graphql-db-app
+server:
+  port: 9001
+graphql:
+  enable: true
+  mapping: /graphql
+  corsEnabled: true
+  # if you want to @ExceptionHandler annotation for custom GraphQLErrors
+  exception-handlers-enabled: true
+graphiql:
+  enabled: true
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    subscriptions: /subscriptions
+  pageTitle: GraphiQL
