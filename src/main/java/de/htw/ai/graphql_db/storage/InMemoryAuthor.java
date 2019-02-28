@@ -12,8 +12,20 @@ public class InMemoryAuthor implements AuthorDAO {
 
     public InMemoryAuthor(){
         allAuthors = new HashMap<>();
-        allAuthors.put(1,new Author(1,"Stephen","King"));
-        allAuthors.put(2,new Author(2,"Bram","Stoker"));
+        initHashMap();
+    }
+
+    private void initHashMap(){
+        Author author1 = new Author();
+        Author author2 = new Author();
+        author1.setAuthor_id(1);
+        author1.setForename("Stephen");
+        author1.setLastname("King");
+        author2.setAuthor_id(2);
+        author2.setForename("Bram");
+        author2.setLastname("Stoker");
+        allAuthors.put(1,author1);
+        allAuthors.put(2,author2);
     }
 
     @Override

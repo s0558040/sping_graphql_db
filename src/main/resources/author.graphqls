@@ -5,6 +5,7 @@ schema {
 type Query {
     author(id: Int!): Author
     book(isbn: Int!): Book
+    publisher(id: Int!): Publisher
 }
 
 type Author {
@@ -18,4 +19,12 @@ type Book {
     title: String
     pages: Int
     author: Author!
+    publisher: Publisher!
+}
+
+type Publisher {
+    publisher_id: Int!
+    company_name: String
+    zip: Int
+    city: String
 }

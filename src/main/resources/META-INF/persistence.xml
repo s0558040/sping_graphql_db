@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="graphqlDB-PU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>de.htw.ai.graphql_db.pojo.Author</class>
+        <class>de.htw.ai.graphql_db.pojo.Publisher</class>
+        <class>de.htw.ai.graphql_db.pojo.Book</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://db.f4.htw-berlin.de:5432/_s0558040__book_database" />
+            <property name="javax.persistence.jdbc.user" value="_s0558040__book_database_generic" />
+            <property name="javax.persistence.jdbc.password" value="Aligator2" />
+
+            <property name="hibernate.show.sql" value="true" />
+            <property name="hibernate.format.sql" value="false" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect" />
+            <property name="hibernate.c3p0.min_size" value="1" />
+            <property name="hibernate.c3p0.max_size" value="10" />
+            <property name="hibernate.c3p0.timeout" value="1800" />
+            <property name="hibernate.c3p0.max_statements" value="50" />
+            <property name="hibernate.connection.release_mode" value="after_statement" />
+        </properties>
+    </persistence-unit>
+</persistence>
