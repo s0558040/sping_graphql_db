@@ -17,7 +17,6 @@ public class Query implements GraphQLQueryResolver {
     private AuthorDAO authorDAO;
     @Autowired
     private BookDAO bookDAO;
-
     @Autowired
     private PublisherDAO publisherDAO;
 

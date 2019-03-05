@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+
 public class InMemoryBook implements BookDAO {
     private Map<Integer,Book> allBooks;
 

@@ -8,10 +8,10 @@ import javax.persistence.Persistence;
 
 @Configuration
 public class Injection {
-/*
+
     @Bean
     public EntityManagerFactory entityManagerFactory(){
         return Persistence.createEntityManagerFactory("graphqlDB-PU");
     }
-*/
+
 }

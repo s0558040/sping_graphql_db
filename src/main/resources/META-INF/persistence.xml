@@ -8,9 +8,9 @@
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://db.f4.htw-berlin.de:5432/_s0558040__book_database" />
-            <property name="javax.persistence.jdbc.user" value="_s0558040__book_database_generic" />
-            <property name="javax.persistence.jdbc.password" value="Aligator2" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-75-227-10.eu-west-1.compute.amazonaws.com:5432/d3ccon1r9fs3ro" />
+            <property name="javax.persistence.jdbc.user" value="hwxbtdjshswzdo" />
+            <property name="javax.persistence.jdbc.password" value="cf39746c86d0fc0a32015316112d0b849595e16b4c70eb8123fd171d4c4e4c78" />
 
             <property name="hibernate.show.sql" value="true" />
             <property name="hibernate.format.sql" value="false" />

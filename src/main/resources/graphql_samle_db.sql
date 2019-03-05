@@ -33,10 +33,7 @@ INSERT INTO publisher(publisher_id,company_name,zip,city) VALUES
 	(1,'Anaconda Verlag GmbH',50827,'Köln'),
     (2,'Bastei Lübbe AG',51063,'Köln');
 INSERT INTO book(isbn,title,pages,author,publisher) VALUES
-	(9783866472938,'Dacula',502,2,1),
-    (9783404130085,'Shining',624,1,2),
-    (9783453435797,'Friedhof der Kuscheltiere',608,1,2);
-GRANT ALL ON author TO _s0558040__book_database_generic;
-GRANT ALL ON publisher TO _s0558040__book_database_generic;
-GRANT ALL ON book TO _s0558040__book_database_generic;
+	(72938,'Dacula',502,2,1),
+    (30085,'Shining',624,1,2),
+    (35797,'Friedhof der Kuscheltiere',608,1,2);
 COMMIT;
